@@ -1,0 +1,132 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Smooch", cursive;
+  /* background-color: whitesmoke; */
+}
+h1 {
+  text-align: center;
+}
+#main {
+  margin: auto;
+  width: 360px;
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  grid-template-rows: repeat(3, 120px);
+  gap: 0;
+  box-sizing: border-box;
+}
+#main > div {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 40px);
+  grid-template-rows: repeat(3, 40px);
+  width: 120px;
+  gap: 0;
+  height: 120px;
+  background-color: whitesmoke;
+  border-top: solid 3px rgb(70, 105, 245);
+  border-left: solid 3px rgb(70, 105, 245);
+}
+#main > :nth-child(3) {
+  border-right: solid 3px rgb(70, 105, 245);
+}
+#main > :nth-child(6) {
+  border-right: solid 3px rgb(70, 105, 245);
+}
+#main > :nth-child(7) {
+  border-bottom: solid 3px rgb(70, 105, 245);
+}
+#main > :nth-child(8) {
+  border-bottom: solid 3px rgb(70, 105, 245);
+}
+#main > :nth-child(9) {
+  border-bottom: solid 3px rgb(70, 105, 245);
+  border-right: solid 3px rgb(70, 105, 245);
+}
+#main > div > div {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+}
+#main > div > :nth-child(1) {
+  border-right: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+#main > div > :nth-child(2) {
+  border-right: solid 1px gray;
+  border-bottom: solid 1px gray;
+}
+#main > div > :nth-child(3) {
+  border-bottom: solid 1px gray;
+}
+#main > div > :nth-child(4) {
+  border-bottom: solid 1px gray;
+  border-right: solid 1px gray;
+}
+#main > div > :nth-child(5) {
+  border-bottom: solid 1px gray;
+  border-right: solid 1px gray;
+}
+#main > div > :nth-child(6) {
+  border-bottom: solid 1px gray;
+}
+#main > div > :nth-child(7) {
+  border-right: solid 1px gray;
+}
+#main > div > :nth-child(8) {
+  border-right: solid 1px gray;
+}
+input {
+  font-size: 24px;
+  color: rgb(70, 155, 246);
+  font-weight: bold;
+  height: 94%;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: center;
+}
+input:focus {
+  background-color: rgb(223, 237, 248);
+}
+input::-webkit-inner-spin-button,
+input::-webkit-outter-spin-button {
+  -webkit-appearance: none;
+}
+#mainContainer {
+  display: none;
+  background-color: rgba(220, 218, 218, 0.388);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+}
+#congo {
+  width: 360px;
+  height: 250px;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  border-radius: 2px;
+  background-color: white;
+}
+#congo > button {
+  width: 250px;
+  height: 50px;
+  background-color: rgb(163, 235, 111);
+  border: none;
+  font-size: 19px;
+  border-radius: 30px;
+  font-weight: 500;
+}
